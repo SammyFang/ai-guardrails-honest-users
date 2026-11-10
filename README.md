@@ -20,9 +20,9 @@ Use Python 3.13 and an internet connection, then run from the cloned repository:
 python run.py
 ```
 
-The runner creates a local `.venv`, installs the pinned dependencies, downloads the three official inputs and verifies their SHA256 hashes, reruns the analysis, independently checks the calculations, checks four original saved notebook counts, and rebuilds the figures and report. It does not call any AI model API and requires no API key. A changed official input causes the run to fail rather than silently change the data version.
+The runner creates a local `.venv`, installs the complete pinned dependency set from `requirements-lock.txt`, downloads the three official inputs and verifies their SHA256 hashes, reruns the analysis, independently checks the calculations, checks four original saved notebook counts, and rebuilds the figures and report. It does not call any AI model API and requires no API key. A changed official input causes the run to fail rather than silently change the data version.
 
-For an existing environment with `requirements.txt` installed:
+For an existing environment with `requirements-lock.txt` installed:
 
 ```bash
 python run.py --current-env

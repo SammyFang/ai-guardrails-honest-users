@@ -11,3 +11,5 @@ The release folder started without original data or an original notebook. `pytho
 - The tracked-file audit excludes original data, individual-level derived records, original notebooks, article PDFs, credentials, environment folders and per-person numeric audit rows.
 
 This verifies the released analysis implementation and limited saved-count reproduction. It does not reproduce historical API generations or every original regression, and it does not validate causal psychological mechanisms.
+
+A second run used the README command `python run.py` with no pre-existing `.venv`. It created the isolated environment, installed the dependencies and completed every stage with exit code 0. The verified complete environment was captured in `requirements-lock.txt`; the runner now installs that exact set. Both runs reproduce the same frozen estimates and all 5,032 checks.

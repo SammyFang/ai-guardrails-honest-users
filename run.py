@@ -17,7 +17,7 @@ def main():
         if not python.exists():
             venv.EnvBuilder(with_pip=True).create(env_dir)
         subprocess.run([str(python), '-m', 'pip', 'install', '--disable-pip-version-check',
-                        '-r', str(ROOT / 'requirements.txt')], check=True, cwd=ROOT)
+                        '-r', str(ROOT / 'requirements-lock.txt')], check=True, cwd=ROOT)
     env = dict(os.environ, PYTHONIOENCODING='utf-8')
     stages = [
         ['fetch_data.py'],
