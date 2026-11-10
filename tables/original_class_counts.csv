@@ -1,0 +1,112 @@
+model,arm,original_class,n,task,intention
+claude,baseline,Honest,1015,tax,Honest
+claude,baseline,Fully Dishonest,42,tax,Honest
+claude,baseline,Partially Dishonest,26,tax,Honest
+claude,guardrail,Honest,976,tax,Honest
+claude,guardrail,,75,tax,Honest
+claude,guardrail,Fully Dishonest,20,tax,Honest
+claude,guardrail,Partially Dishonest,12,tax,Honest
+gpt4,baseline,Honest,1015,tax,Honest
+gpt4,baseline,Partially Dishonest,48,tax,Honest
+gpt4,baseline,Fully Dishonest,14,tax,Honest
+gpt4,baseline,,6,tax,Honest
+gpt4,guardrail,Honest,1051,tax,Honest
+gpt4,guardrail,Fully Dishonest,17,tax,Honest
+gpt4,guardrail,Partially Dishonest,13,tax,Honest
+gpt4,guardrail,,2,tax,Honest
+gpt4o,baseline,Honest,998,tax,Honest
+gpt4o,baseline,Partially Dishonest,48,tax,Honest
+gpt4o,baseline,Fully Dishonest,37,tax,Honest
+gpt4o,guardrail,Honest,1055,tax,Honest
+gpt4o,guardrail,Fully Dishonest,17,tax,Honest
+gpt4o,guardrail,Partially Dishonest,11,tax,Honest
+llama,baseline,Honest,885,tax,Honest
+llama,baseline,Partially Dishonest,150,tax,Honest
+llama,baseline,Fully Dishonest,48,tax,Honest
+llama,guardrail,Honest,891,tax,Honest
+llama,guardrail,Partially Dishonest,147,tax,Honest
+llama,guardrail,Fully Dishonest,45,tax,Honest
+claude,baseline,Fully Dishonest,115,tax,Fully Dishonest
+claude,baseline,Honest,18,tax,Fully Dishonest
+claude,baseline,Partially Dishonest,12,tax,Fully Dishonest
+claude,guardrail,,111,tax,Fully Dishonest
+claude,guardrail,Fully Dishonest,19,tax,Fully Dishonest
+claude,guardrail,Honest,11,tax,Fully Dishonest
+claude,guardrail,Partially Dishonest,4,tax,Fully Dishonest
+gpt4,baseline,Fully Dishonest,88,tax,Fully Dishonest
+gpt4,baseline,Honest,51,tax,Fully Dishonest
+gpt4,baseline,Partially Dishonest,6,tax,Fully Dishonest
+gpt4,guardrail,Honest,91,tax,Fully Dishonest
+gpt4,guardrail,Fully Dishonest,28,tax,Fully Dishonest
+gpt4,guardrail,,16,tax,Fully Dishonest
+gpt4,guardrail,Partially Dishonest,10,tax,Fully Dishonest
+gpt4o,baseline,Fully Dishonest,87,tax,Fully Dishonest
+gpt4o,baseline,Honest,45,tax,Fully Dishonest
+gpt4o,baseline,Partially Dishonest,13,tax,Fully Dishonest
+gpt4o,guardrail,Honest,98,tax,Fully Dishonest
+gpt4o,guardrail,Fully Dishonest,27,tax,Fully Dishonest
+gpt4o,guardrail,,14,tax,Fully Dishonest
+gpt4o,guardrail,Partially Dishonest,6,tax,Fully Dishonest
+llama,baseline,Fully Dishonest,104,tax,Fully Dishonest
+llama,baseline,Honest,24,tax,Fully Dishonest
+llama,baseline,Partially Dishonest,17,tax,Fully Dishonest
+llama,guardrail,Fully Dishonest,103,tax,Fully Dishonest
+llama,guardrail,Honest,25,tax,Fully Dishonest
+llama,guardrail,Partially Dishonest,17,tax,Fully Dishonest
+claude,baseline,Honest,547,dice,Honest
+claude,baseline,Fully Dishonest,39,dice,Honest
+claude,baseline,Partially Dishonest,2,dice,Honest
+claude,baseline,,1,dice,Honest
+claude,guardrail,Honest,570,dice,Honest
+claude,guardrail,Fully Dishonest,11,dice,Honest
+claude,guardrail,Partially Dishonest,5,dice,Honest
+claude,guardrail,,3,dice,Honest
+gpt4,baseline,Honest,569,dice,Honest
+gpt4,baseline,Fully Dishonest,13,dice,Honest
+gpt4,baseline,Partially Dishonest,6,dice,Honest
+gpt4,baseline,,1,dice,Honest
+gpt4,guardrail,Honest,588,dice,Honest
+gpt4,guardrail,,1,dice,Honest
+gpt4o,baseline,Honest,544,dice,Honest
+gpt4o,baseline,Fully Dishonest,29,dice,Honest
+gpt4o,baseline,Partially Dishonest,11,dice,Honest
+gpt4o,baseline,,5,dice,Honest
+gpt4o,guardrail,Honest,554,dice,Honest
+gpt4o,guardrail,Fully Dishonest,18,dice,Honest
+gpt4o,guardrail,,12,dice,Honest
+gpt4o,guardrail,Partially Dishonest,5,dice,Honest
+llama,baseline,Honest,573,dice,Honest
+llama,baseline,Fully Dishonest,9,dice,Honest
+llama,baseline,Partially Dishonest,5,dice,Honest
+llama,baseline,,2,dice,Honest
+llama,guardrail,Honest,576,dice,Honest
+llama,guardrail,Fully Dishonest,8,dice,Honest
+llama,guardrail,,3,dice,Honest
+llama,guardrail,Partially Dishonest,2,dice,Honest
+claude,baseline,Fully Dishonest,107,dice,Fully Dishonest
+claude,baseline,Honest,3,dice,Fully Dishonest
+claude,guardrail,Fully Dishonest,48,dice,Fully Dishonest
+claude,guardrail,Partially Dishonest,46,dice,Fully Dishonest
+claude,guardrail,,10,dice,Fully Dishonest
+claude,guardrail,Honest,6,dice,Fully Dishonest
+gpt4,baseline,Fully Dishonest,103,dice,Fully Dishonest
+gpt4,baseline,Honest,6,dice,Fully Dishonest
+gpt4,baseline,Partially Dishonest,1,dice,Fully Dishonest
+gpt4,guardrail,Honest,109,dice,Fully Dishonest
+gpt4,guardrail,Partially Dishonest,1,dice,Fully Dishonest
+gpt4o,baseline,Fully Dishonest,106,dice,Fully Dishonest
+gpt4o,baseline,,2,dice,Fully Dishonest
+gpt4o,baseline,Honest,1,dice,Fully Dishonest
+gpt4o,baseline,Partially Dishonest,1,dice,Fully Dishonest
+gpt4o,guardrail,Fully Dishonest,84,dice,Fully Dishonest
+gpt4o,guardrail,,19,dice,Fully Dishonest
+gpt4o,guardrail,Honest,5,dice,Fully Dishonest
+gpt4o,guardrail,Partially Dishonest,2,dice,Fully Dishonest
+llama,baseline,Fully Dishonest,89,dice,Fully Dishonest
+llama,baseline,Honest,13,dice,Fully Dishonest
+llama,baseline,Partially Dishonest,6,dice,Fully Dishonest
+llama,baseline,,2,dice,Fully Dishonest
+llama,guardrail,Fully Dishonest,90,dice,Fully Dishonest
+llama,guardrail,Honest,17,dice,Fully Dishonest
+llama,guardrail,Partially Dishonest,2,dice,Fully Dishonest
+llama,guardrail,,1,dice,Fully Dishonest

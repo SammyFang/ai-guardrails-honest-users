@@ -1,0 +1,6 @@
+task,intention,outcome,instructions_4paired,instructions_3paired,instructions_2paired,instructions_1paired,instructions_0paired,persons_expected,persons_paired
+tax,Honest,truthful,1002,79,2,0,0,561,561
+tax,Honest,near_truth,1002,79,2,0,0,561,561
+tax,Fully Dishonest,truthful,34,93,6,12,0,83,83
+dice,Honest,truthful,571,16,1,0,1,317,317
+dice,Fully Dishonest,truthful,82,24,4,0,0,61,61

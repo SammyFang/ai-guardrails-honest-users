@@ -1,0 +1,5 @@
+source_notebook,source_expression,original_class,notebook_count,independent_count,match
+original_guardrail_notebook.ipynb,full_cheating_df['llm_is_cheating'].value_counts(),True,1341,1341,True
+original_guardrail_notebook.ipynb,full_cheating_df['llm_is_cheating'].value_counts(),False,1193,1193,True
+original_guardrail_notebook.ipynb,full_cheating_exc_df['llm_is_cheating'].value_counts(),True,1288,1288,True
+original_guardrail_notebook.ipynb,full_cheating_exc_df['llm_is_cheating'].value_counts(),False,1155,1155,True

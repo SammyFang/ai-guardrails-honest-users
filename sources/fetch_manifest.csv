@@ -1,0 +1,4 @@
+local_path,url,sha256,osf_version
+raw/tax.csv,https://osf.io/download/a23v5/,25730dee2aef3adff1065d7eb946624faffa386064f7358fa3d8e0987e6fead3,1
+raw/dice.csv,https://osf.io/download/bngef/,5c9fc102cd6acf2cd1370a0d7542f46cb27d448bf321818fca4d8dc6450d9d1a,1
+sources/original_guardrail_notebook.ipynb,https://osf.io/download/2hjaq/,61ef103701ea9aed849294e9fe04bbbfa3fef06ead04cf986c434f7d35386320,1

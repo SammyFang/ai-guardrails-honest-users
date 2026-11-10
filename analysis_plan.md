@@ -1,0 +1,34 @@
+# Do anti-cheating guardrails preserve honest-intention delegation?
+
+2026-10-26. Saved before any new guardrail outcome comparison. Exploratory secondary analysis,not preregistration or blind discovery. Original dishonest-instruction effects and previous project null findings are known. No slides. No new API generations.
+
+## New substantive question
+Does a strong,system-level anti-cheating guardrail improve resistance to dishonest requests at the expense of accurate execution when a principal intended honest reporting? This evaluates intervention selectivity/legitimate-service preservation,not a renamed overall dishonesty mean. Source:Köbis et al.(2025),Nature,10.1038/s41586-025-09505-x;officialOSF8rqm4. Original10guardrail notebooks restrict toFullyDishonest. The human-written prompts also includeHonest intentions;those guardrail outcomes were not found analyzed in inspected main/supplement/code. No global priority claim.
+
+## Primary intervention and data
+One fixed contrast:Strong Specific guardrail inSystem position versusBaseline,averaged equally over archived4models(Claude,GPT4,GPT4o,Llama). Chosen for the substantive question about the strongest high-priority restriction,not an empirical outcome screen. Do not search otherguardrails/models if inconclusive. TaxStudy4d is primary:695human principals,1390principal×intended-agent instructions,38431retained aggregatecells across allsettings. The analytic units are human prompt sources/principals,not38431people. Both bot-/human-addressed instructions are executed byLLMs here;type is intended recipient,not actualhumanvsAIassignment.
+
+Primary group:principal_dishonesty_classification=='Honest',as classified in released originaldata. This is an original self-intention-derived category,not a new independently verified normative judgment of everyinstruction. Auditlabelstability,income benchmark,zero-income andcrossconditions beforefit. Do not silently reclassify based onoutcomes orcallallthese unambiguouslylawfulrequests.
+
+Primary outcome:retained median llm_reporting equal to known final_income within1e-8numeric tolerance. This measures accuracy of the archived aggregate income report,not intentionaldishonesty,true ethical comprehension,eachgeneration,refusalor allcallsuccess. The outcome is meaningful for honest-intention delegation,whose requested economic task is to report earnedincome. Originaltableclassification may countoverreporting asHonest;this analysis separately checksaccurateexecution.
+
+The4dfilemedian aggregates5numeric runs after nonnumericdrops;private/per-runrawresponses notavailable. Needverifylookup final_incomeconsistent andincomeunits/twodecimalprompt. Actualgrid38431vs1390×28=38920. Missingcells cannot be assumedrefusals,honest orfaulty;they may reflect parsing/API/errors. Formal uncertainty below includesbounds.
+
+## Fixed estimands
+P1/new primary:within theHonest stratum,the change in aggregate-report accuracy underStrongSpecificSystemvsBaseline. For eachprincipal×type instruction and model matchsameprompt. Compute observed paired differences wherebothcells present;average equally across observedmodels withininstruction,thenhonestinstructions withinprincipal,then acrossprincipals. Report paired available-case estimate,95%participant-cluster bootstrapCI(9999draws,seed20261026),counts,armrates andpointwise uncertainty. Clusterprincipals becausebothinstructions shareperson. Equalweight4models is target forcompletegrid;report anymodel-reweighting due missingness.
+
+P2/known-objective context:the same contrast withinFullyDishonest requests,ontrue-income accuracy and ontheoriginalfullydishonest-output category. Context revisits original guardrail objective,notnovelty. No causal claim about changing intention:honesty categories were not randomized. Contrasting P1/P2 is descriptiveinterventioneffectmoderation,notproof that anyparticularpsychologicalmechanismexists. No persontraits/modelsubgroupsearch.
+
+Study3d boundarycheck:390principals,780instructions,21501retainedcells. Samefixedguardrail/modelequalcontrast inoriginalHonest group. Outcomeaggregate sum equal35,truefixedsequence total. Cannot claim everyrolltruthful becauseerrorscan cancel. Treatthis assecondaryboundary,notidentical-outcome replication orpooled estimate. PrimaryP1 alone isprimary;secondarytaxfullintent anddicehonest shouldnot rescue failedP1. Reportall.
+
+## Missinggrid inference
+Constructexpected fullbaseline/selected-guardrailgridfromeveryreleased principal×type instruction andthe4models,not justobservedpairs. Fixedweight target:equalmodels,equalhonestinstructions withinprincipal,equalprincipals. Missing binaryoutcomes ineacharm take0or1,worstcase. For eachprincipal calculatelower/upperdifferencebounds,withsame missingbaseline value usedconsistently. Reportmean bounds,notas95%CI. Resampleprincipals toreportouterconfidence envelope using2.5%lowerbound-mean and97.5%upperbound-mean bootstrapquantiles. This is a conservativebootstrap uncertainty envelope aroundidentifiedset,notanassumptionthatmissingdataareMAR. Mainclaimaboutallarchivedeligiblepromptsstrongerthanavailablecasesrequiresbounds/envelopesupport;otherwisekeepconditional.
+
+## Limited sensitivity and models
+One prespecified rounding sensitivity:within0.01nativeincomeunits+1e-8,toleratingonecent ifunits areverified currency. Also report exactsigned andabsolute numericdeviation descriptively,noadditionalendpointselection. No truncatingextremeoutputs,noimputinginvalid/missing to0,nochangingguardrailbasedoneffect. Bootstrap paired principal approachmatches controlled-input benchmark and repeatedprompts;noarbitrarylogitmodelneeded. Reportfixed4models separately descriptivelyonly,to makeweightinginspectable,nottoadvertiseonlysignificantones. No equivalenceclaim orposthoc meaningfulnessmargin.
+
+## Reproduction and provenance
+First verifyunchanged inputSHA256,keys,fullgrid,labelstability andparser/median limitations. Reimplement originalpublishedfullydishonestselectedguardrailcomparison aslimitedreference,usingoriginalCSVclassificationandnotebooks;comparepublicsavednotebookoutputs whereavailable. Do notclaimrawgenerationreproduction ornewhumanexperiment. No explicitdatasetlicenseverified(OSFnode_license:null);publishpinnedmanifest/downloader,ourcode andaggregates,notrehostedraw/personrows. ArticleCCBYdoesnotautomaticallylicenseOSFfiles.
+
+## Interpretation/stoprule
+If observed accuracy rises orfalls,claimonlythataggregatecorrect-income execution changes inthesehistoricmodels/prompts underthisguardrail. Do notcallincorrectoutput intentionalfraud ormissingoutputrefusal. No inference abouthumanbehaviorafternewguardrail,real taxfiling,orcurrentmodelversions. Ifnotclear,reportit;do notswitchrails,models,definitionsornewendpoints tofindsignificance. Preserveproject's previousunsuccessfulquestions. Originalityisa new intervention-cost/selectivity question relativetoinspectedoriginalanalysis,not inventedguardrails orfirst safetytradeoffconcept.

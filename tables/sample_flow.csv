@@ -1,0 +1,3 @@
+task,principals,instructions,all_released_cells,full_design_cells,missing_full_design_cells,selected_expected_cells,selected_missing_cells,zero_truth_principals,sha256
+tax,695,1390,38431,38920,489,11120,297,3,25730dee2aef3adff1065d7eb946624faffa386064f7358fa3d8e0987e6fead3
+dice,390,780,21501,21840,339,6240,90,0,5c9fc102cd6acf2cd1370a0d7542f46cb27d448bf321818fca4d8dc6450d9d1a

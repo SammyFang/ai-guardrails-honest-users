@@ -1,0 +1,13 @@
+# Official inputs and participant-level outputs stay local.
+/raw/
+/processed/
+/sources/*.ipynb
+/sources/*.pdf
+/sources/*.html
+/tables/audit/numeric_checks.csv
+/.venv/
+__pycache__/
+*.pyc
+.DS_Store
+.env
+.env.*

@@ -1,0 +1,8 @@
+from pathlib import Path
+import csv,json,re,argparse
+ap=argparse.ArgumentParser();ap.add_argument('--raw',default='outputs/guardrail_service/raw/dice.csv');ap.add_argument('--notebook');ap.add_argument('--out',default='work/guardrail_audit');a=ap.parse_args();out=Path(a.out);out.mkdir(parents=True,exist_ok=True);p=Path(a.notebook) if a.notebook else next(Path('work/new_candidates_20261026/delegation/raw').glob('*__die_rolling-2-two_by_three_by_two.ipynb'));j=json.loads(p.read_text(encoding='utf-8'));rows=list(csv.DictReader(Path(a.raw).open(encoding='utf-8-sig')));eligible=[r for r in rows if r['prompt_nature']!='Baseline' and r['delegator_intention']=='Fully Dishonest'];checks=[]
+for expr,scope in [("full_cheating_df['llm_is_cheating'].value_counts()",eligible),("full_cheating_exc_df['llm_is_cheating'].value_counts()",[r for r in eligible if int(r['ID'])not in [173,377]])]:
+ c=next(c for c in j['cells'] if ''.join(c.get('source',[])).strip()==expr);text='\n'.join(''.join(o.get('text',[])) or ''.join(o.get('data',{}).get('text/plain',[])) for o in c.get('outputs',[]));counts=dict((k,int(v)) for k,v in re.findall(r'(True|False)\s+(\d+)',text));actual={'True':sum(r['bot_report_cheating_level']=='Fully Dishonest' for r in scope),'False':sum(r['bot_report_cheating_level']!='Fully Dishonest' for r in scope)}
+ for k,v in actual.items():assert v==counts[k];checks.append(dict(source_notebook=p.name,source_expression=expr,original_class=k,notebook_count=counts[k],independent_count=v,match=True))
+with (out/'original_saved_count_comparison.csv').open('w',encoding='utf-8',newline='') as f:w=csv.DictWriter(f,fieldnames=checks[0]);w.writeheader();w.writerows(checks)
+print(checks)

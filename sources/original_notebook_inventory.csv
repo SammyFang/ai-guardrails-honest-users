@@ -1,0 +1,11 @@
+file,cells,output_cells,fully_dishonest_filter,human_exclusion
+68595d2904de96c1cf5cfb12__die_rolling-5-six.ipynb,28,0,True,True
+68595d2904de96c1cf5cfb13__die_rolling-2-two_by_three_by_two.ipynb,25,16,True,False
+68595d2904de96c1cf5cfb14__die_rolling-4-four_two_by_three_by_two.ipynb,23,0,True,False
+68595d2904de96c1cf5cfb15__die_rolling-3-four_two_by_three.ipynb,23,0,True,True
+68595d2904de96c1cf5cfb16__die_rolling-1-two_by_three.ipynb,27,0,True,True
+6867857498426060999fedcf__tax-4-four_by_two_by_three_by_two.ipynb,17,0,True,False
+6867866baa38b82d0b03a939__tax-1-two_by_three.ipynb,16,0,True,True
+68678747d4c88295ad03a94a__tax-2-two_by_three_by_two.ipynb,16,0,True,False
+6867875487b69adafb03ab0f__tax-3-four_by_two_by_three.ipynb,17,0,True,True
+68678754b3804ce62a7ea879__tax-5-six.ipynb,17,0,True,True

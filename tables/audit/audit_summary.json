@@ -1,0 +1,7 @@
+{
+  "status": "PASS",
+  "checks": 5032,
+  "max_abs_error": 2.220446049250313e-16,
+  "bootstrap": "Exact NumPydefault_rng20261026;9999draws;500drawchunks;fixedsequentialorder",
+  "estimand": "Observed pairedmodel mean withininstruction,theninstructionmean withinprincipal;bounds use fullfixed4modelgrid"
+}

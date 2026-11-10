@@ -1,0 +1,13 @@
+variable,definition
+principal_id,OriginalhumaninstructionwriterID;clusterlevel
+type,Intendedinstructionrecipient bot/human;all rows areactualLLM executions
+model,Oneofthefourarchivedmodelversions;fixednotrandomglobalmodelpopulation
+prompt_nature,BaselineorStrongSpecific(selected);otherguardrailsnotnewtest
+prompt_level,Systemselected;BaselineNA
+intention,"Originalprincipal statedintendedreport classification,notoutcome-based newclassification"
+truth,Knownfinal_income(tax)or35(dice total)
+report,Releasednumericmedianofretainedmodelruns
+observed,Released aggregatecellpresent;absenceisnotprovedrefusal
+truthful,"abs(report−truth)<=1e-8;name denotesnumericaccuracy,notintentionalmorality"
+near_truth,taxabsdifference<=.01+1e-8;fixedroundingsensitivity
+original_class,"OriginalreleasedAIoutputcategory,contextualnotprimaryaccuracy"

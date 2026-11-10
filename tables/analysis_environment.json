@@ -1,0 +1,15 @@
+{
+  "numpy": "2.3.4",
+  "pandas": "2.3.3",
+  "bootstrap_draws": 9999,
+  "seed": 20261026,
+  "contrast": "Strong Specific System vs Baseline",
+  "models": [
+    "claude",
+    "gpt4",
+    "gpt4o",
+    "llama"
+  ],
+  "primary": "tax Honest retained-median exactincome accuracy",
+  "slides": 0
+}
